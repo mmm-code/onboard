@@ -1,1 +1,11 @@
 <h1 class="pink">Tell Us About You</h1>
+<br/>
+<br/>
+<%= simple_form_for @person, url: new_person_path do |f| %>
+  <%= f.input :about %>
+  <br/>
+  <%= f.input :resident %>
+  <br/>
+  <%= f.submit 'Share!' %>
+  
+<% end %>
