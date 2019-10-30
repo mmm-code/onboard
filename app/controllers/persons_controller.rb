@@ -1,6 +1,6 @@
 class PersonsController < ApplicationController
   def index
-    @person = Person.first
+    @person = Person.all
   end
   
   def new
